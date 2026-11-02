@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.pagesjaunes.fr/pros/56824689",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -226,7 +226,7 @@ response = requests.get(
     params={
         "query": "https://www.pagesjaunes.fr/annuaire/chercherlespros?quoiqui=Dentiste&ou=Toulouse+(31000)&univers=pagesjaunes&idOu=",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
